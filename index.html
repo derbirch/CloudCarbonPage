@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="assets/css/vlt-main.min.css">
 	<!--Custom-->
 	<link rel="stylesheet" href="assets/css/custom.css">
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+	<script>fetch("https://api.leancloud.cn/1.1/classes/log",{method:"post",headers:{"X-AVOSCloud-Application-Id":"QLCzHy5bTsfLQe0o5Q4KUtNI-gzGzoHsz","X-AVOSCloud-Application-Key":"EUElGMP580rwPe6ulVMa4CVF","Content-Type":"application/json"},body:JSON.stringify({slug:location.pathname,ua:navigator.userAgent,host:location.host})}),fetch(`https://api.leancloud.cn/1.1/classes/log?limit=0&count=1&where={"slug":"${location.pathname}"}`,{method:"get",headers:{"X-AVOSCloud-Application-Id":"QLCzHy5bTsfLQe0o5Q4KUtNI-gzGzoHsz","X-AVOSCloud-Application-Key":"EUElGMP580rwPe6ulVMa4CVF","Content-Type":"application/json"}}).then(res=>res.json()).then(i=>{document.dispatchEvent(new CustomEvent("inside",{detail:{type:"pv",data:{[location.pathname.substring(1)]:i.count}}}))});</script>
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 
 <body class=" animsition">
@@ -28,7 +31,7 @@
 			<div class="vlt-navbar-background"></div>
 			<div class="vlt-navbar-inner">
 				<div class="vlt-navbar-inner--left">
-					<!--Logo--><a class="vlt-navbar-logo" href="index.html"><img src="assets/img/svg/logo.svg" alt="logo"></a>
+					<!--Logo--><!--<a class="vlt-navbar-logo" href="index.html"><img src="assets/img/svg/logo.svg" alt="logo"></a>-->
 				</div>
 				<div class="vlt-navbar-inner--center">
 					<div class="container">
@@ -544,36 +547,25 @@
 								<div class="col-xl-4">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:0s; animation-duration:700ms;">
-										<h3>Contact</h3>
-										<div class="vlt-gap-30"></div>
-										<p>You'll called for yielding male, so lights Stars abundantly, is their.</p>
-										<div class="vlt-gap-40"></div>
-										<address>27 Queen St, New York USA</address>
-										<p><a class="tel" href="tel:+72126742510">+7 (212) 674-25-10</a></p>
-										<p><a class="email" href="mailto:gilber.design@gmail.com">gilber.design@gmail.com</a></p>
+										<h3>留言板</h3>
+										<p>欢迎与我们分享您的真知灼见！</p>
 									</div>
 								</div>
 								<div class="col-xl-6 offset-xl-2">
 									<div class="vlt-gap-70--lg"></div>
 									<!--Animated Block-->
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:.1s; animation-duration:700ms;">
-										<h4>Let's grab a coffee and jump on conversation <span class="has-accent-color">chat with me.</span></h4>
-										<div class="vlt-gap-20"></div>
-										<form class="vlt-contact-form" novalidate="novalidate">
-											<div class="vlt-form-group">
-												<input type="text" id="name" name="name" required="required" placeholder="Your Name">
-											</div>
-											<div class="vlt-form-group">
-												<input type="email" id="email" name="email" required="required" placeholder="Your Email">
-											</div>
-											<div class="vlt-form-group">
-												<textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
-											</div>
-											<div class="message success">Your message is successfully sent...</div>
-											<div class="message danger">Sorry something went wrong!</div>
-											<!--Button-->
-											<button class="vlt-btn vlt-btn--primary vlt-btn--md">Contact Me</button>
-										</form>
+										<div id="vcomment"></div> 
+										<script>var $valine = new Valine();
+											$valine.init({
+												el: '#vcomment',
+												appId: 'QLCzHy5bTsfLQe0o5Q4KUtNI-gzGzoHsz',
+												appKey: 'EUElGMP580rwPe6ulVMa4CVF',
+												path: location.pathname,
+												notify: true,
+												lang: 'en',
+												placeholder: 'Share your ideas🤗',
+											})</script>
 									</div>
 								</div>
 							</div>
