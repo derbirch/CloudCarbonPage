@@ -27,7 +27,8 @@ iframe{
     padding-left: 2em;
     line-height: 1.3rem;
     margin-top: 2em;
-    border-left:#6aff7ec9 solid 0.2em;
+    border-left:#02cf02 solid 0.2em;
+    color: #02cf02;
 }
 .chartSource{
     padding-left: 2em;
@@ -48,13 +49,18 @@ h4{
     font-weight: normal;
 }
 .write th {
-    border:1px 固体 #047a04;
+    border-top: 1px solid #047a04;;
     padding:5px;
-    color: #047a04;
+    color: #02cf02;
 }
 .write td {
     border:1px 固体 #047a04;
     padding:5px;
+}
+
+.write table,th,tr,td{ 
+    border-bottom:1px solid #047a04;/* 表格横线 */
+    text-align: center;
 }
 
 .role{

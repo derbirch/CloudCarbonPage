@@ -103,10 +103,11 @@
 		</nav>
 		<div class="vlt-offcanvas-menu__footer">
 			<!--Socials-->
-			<div class="vlt-offcanvas-menu__socials"><a class="vlt-social-icon vlt-social-icon--style-1" href="#"><i class="lnir-facebook-filled"></i></a><a class="vlt-social-icon vlt-social-icon--style-1" href="#"><i class="lnir-twitter-original"></i></a><a class="vlt-social-icon vlt-social-icon--style-1" href="#"><i class="lnir-instagram"></i></a></div>
-			<!--Copyright-->
+			<!--<div class="vlt-offcanvas-menu__socials"><a class="vlt-social-icon vlt-social-icon--style-1" href="#"><i class="lnir-facebook-filled"></i></a><a class="vlt-social-icon vlt-social-icon--style-1" href="#"><i class="lnir-twitter-original"></i></a><a class="vlt-social-icon vlt-social-icon--style-1" href="#"><i class="lnir-instagram"></i></a></div>
+			-->
+				<!--Copyright-->
 			<div class="vlt-offcanvas-menu__copyright">
-				<p>© 2021 Copyright.<br>版权所有</p>
+				<p>© 2021 Copyright.<br>上海大学</p>
 			</div>
 		</div>
 	</div>
@@ -301,6 +302,16 @@
 							</p>
 							<p>数据显示，从 2009 年到 2012 年，芯片挖矿速度呈现指数式上升，而功率也相应地呈现倍数的增长，仅仅三年，就从 65W 增加到 1400W。
 							</p>
+							<div class='write'>
+								<table>
+							<thead>
+							<tr><th>     芯片  </th><th>     投入矿机的年份  </th><th>     代表产品  </th><th>     挖矿速度（KH/S）  </th><th>功率（W）</th></tr></thead>
+							<tbody><tr><td>     CPU  </td><td>     2009  </td><td>     Intel i7-6700  </td><td>     0.65  </td><td>     65  </td></tr><tr><td>     GPU  </td><td>     2010  </td><td>     GTX 1060 6G  </td><td>0.75\times10^3</td><td>     180  </td></tr><tr><td>     FPGA  </td><td>     2011  </td><td>     Spartan 6  </td><td>1.35\times10^6</td><td>     1323  </td></tr><tr><td>     ASIC  </td><td>     2012  </td><td>     蚂蚁 S9  </td><td>1.30\times10^10</td><td>     1400  </td></tr></tbody>
+							</table>
+						</div>
+						<p class="chartHint">2009 - 2012 年挖矿功率</p>
+						<p>功率不断提升的“矿机”需要什么支撑？还是是电。</p>
+						<p>数据显示，截止到 2021 年 11 月 4 日，比特币的网络电力需求，其理论区间在 4.78GW 到 12.08GW 之间，年消费电量达到 105.87TWh。[4] </p>
 							<div class="vlt-gap-50"></div>
 
 
@@ -312,13 +323,14 @@
 
 							<div class ="chartAtt">
 								<p class="chartHint">
-									横坐标为时间，可选择时间查看，纵坐标为耗电量，左纵坐标为逐月耗电量，右纵坐标为累积耗电量。											  </p>
+									横坐标为时间，纵坐标为耗电量，左纵坐标为逐月耗电量，右纵坐标为累积耗电量。滑动时间轴划片即可查看指定年份数据。	  
+								</p>
 								  <p class="chartSource">
 									单位：TWh <br>
                     				数据来源：<a >剑桥大学比特币数据库</a> 2010 - 2021 <br>
 								  </p>
 							</div>
-							<!--图3结束-->
+							<!--图4结束-->
 
 							<p>既然比特币消耗了这么多能源，那能产生什么相应的效益吗？答案是，不能。
 							</p>
@@ -363,7 +375,7 @@
 										<!--图5-->
 										<h4>芯片制程突破，性耗比的魔咒将被打破</h4>
 										<div class="iframe-container">
-											<iframe src="./assets/iframe/p1.html" height="400em" width="100%" style="margin-top: 2em; padding-left: 1em;"></iframe>
+											<iframe src="./assets/iframe/p5.html" height="400em" width="100%" style="margin-top: 2em; padding-left: 1em;"></iframe>
 											
 										</div>
 
@@ -398,7 +410,8 @@
 										</div>
 										<!--图6结束-->
 
-										<p>数据显示，总能量消耗 5371.4，而到服务器，却只能用到 100，可见，数据中心的能源消耗巨大，因此，我国一线城市普遍将数据中心作为“高耗能产业”对待。</p>
+										<p>数据显示，传统计算中心的能耗中，冷却及电力供应系统占到了总耗电能的43%，可见，数据中心的能源消耗巨大。因此，我国一线城市普遍将数据中心作为“高耗能产业”对待。
+										</p>
 										<p>当然，数据中心的耗能是不是就毫无办法了？并不是，许多企业在减排提效方面正在不懈努力，比如 Google。</p>
 										<p>美国总务管理局 (GSA) 的一项案例研究表明，如果改为使用 Google Apps，企业可将办公室计算成本、能源消耗量和碳排放量减少 65-90%。同时数据显示，过去 12 个月 (TTM) Google 的 PUE 为 1.10，这个数据囊括了 Google 所有的大规模数据中心（达到稳定运维状态之后）、所有季节以及所有间接能耗来源。</p>
 										<p>因此，Goolge 的云平台让对应的计算中心减少了能源的消耗及碳排。</p>
@@ -422,11 +435,10 @@
 										</div>
 										<!--图7结束-->
 										<p>但是，从 2019 年统计的 203 个数据中各机柜规模等级的平均 PUE 数据来看，中国的数据中心能效水平仍有较大的提升空间，我们还在路上。</p>
+										<div class="vlt-gap-50"></div>
+										<div class='write'><figure><table><thead><tr><th><span>通信领域</span></th><th><span>互联网领域</span></th><th><span>公共机构领域</span></th></tr></thead><tbody><tr><td><span>武清数据中心</span></td><td><span>中经云亦庄数据中心</span></td><td><span>中国科学院计算机网络信息中心信息化大厦</span></td></tr><tr><td><span>中国联通四川天府信息数据中心</span></td><td><span>腾讯天津滨海数据中心</span></td><td><span>丽水市公安局数据中心</span></td></tr><tr><td><span>中国移动（重庆）数据中心</span></td><td><span>阿里巴巴张北云计算庙滩数据中心</span></td><td><span>宁波市行政中心信息化集中机房</span></td></tr><tr><td><span>中国（西部）云计算中心</span></td><td><span>环首都·太行山能源信息技术产业基地</span></td><td><span> </span></td></tr><tr><td><span>中国移动长三角（苏州）数据中心</span></td><td><span>乌兰察布华为云服务数据中心</span></td><td><span>中国石油数据中心（吉林）</span></td></tr><tr><td><span>中国联通哈尔滨云数据中心</span></td><td><span>绿色海量云存储基地</span></td><td><span> </span></td></tr><tr><td><span>北京联通黄村 IDC 机房</span></td><td><span>数讯 IDXIII 蓝光数据中心</span></td><td><span>平安深圳观澜数据中心</span></td></tr><tr><td><span>中原数据基地 DC1 数据中心</span></td><td><span>京东云华东数据中心</span></td><td><span>中国邮政储蓄银行总行合肥数据中心</span></td></tr><tr><td><span>中国电信云计算内蒙古信息园 A6 数据中心</span></td><td><span>雅安大数据产业园</span></td><td><span>广发银行股份有限公司南海生产机房</span></td></tr><tr><td><span>中国电信上海公司漕盈数据中心 1 号楼</span></td><td><span>重庆腾讯云计算数据中心</span></td><td><span>中国人寿保险股份有限公司上海数据中心</span></td></tr><tr><td><span>中国电信云计算重庆基地水土数据中心</span></td><td><span>百旺信云数据中心一期</span></td><td><span>汉口银行光谷数据中心</span></td></tr></tbody></table></figure><p>&nbsp;</p></div>
 										<p>2020 年底，国家工信部公布了 2020 年的绿色数据中心名单，其中不乏我们熟悉的名字，如移动、联通、阿里、腾讯等，60 家绿色数据中心的建设只是一个开始。</p>
 										<p>2021 年 8 月，工信部印发《新型数据中心发展三年行动计划（2021-2023 年）》，明确大力推动绿色数据中心创建、运维和改造。工信部明确提出，我国要用 3 年时间基本形成新型数据中心发展格局。其中，到 2021 年底，新建大型及以上数据中心 PUE 要降低到 1.35 以下。</p>
-										<div class="vlt-gap-50"></div>
-										<div id='write'  class=''><figure><table><thead><tr><th><span>通信领域</span></th><th><span>互联网领域</span></th><th><span>公共机构领域</span></th></tr></thead><tbody><tr><td><span>武清数据中心</span></td><td><span>中经云亦庄数据中心</span></td><td><span>中国科学院计算机网络信息中心信息化大厦</span></td></tr><tr><td><span>中国联通四川天府信息数据中心</span></td><td><span>腾讯天津滨海数据中心</span></td><td><span>丽水市公安局数据中心</span></td></tr><tr><td><span>中国移动（重庆）数据中心</span></td><td><span>阿里巴巴张北云计算庙滩数据中心</span></td><td><span>宁波市行政中心信息化集中机房</span></td></tr><tr><td><span>中国（西部）云计算中心</span></td><td><span>环首都·太行山能源信息技术产业基地</span></td><td><span> </span></td></tr><tr><td><span>中国移动长三角（苏州）数据中心</span></td><td><span>乌兰察布华为云服务数据中心</span></td><td><span>中国石油数据中心（吉林）</span></td></tr><tr><td><span>中国联通哈尔滨云数据中心</span></td><td><span>绿色海量云存储基地</span></td><td><span> </span></td></tr><tr><td><span>北京联通黄村 IDC 机房</span></td><td><span>数讯 IDXIII 蓝光数据中心</span></td><td><span>平安深圳观澜数据中心</span></td></tr><tr><td><span>中原数据基地 DC1 数据中心</span></td><td><span>京东云华东数据中心</span></td><td><span>中国邮政储蓄银行总行合肥数据中心</span></td></tr><tr><td><span>中国电信云计算内蒙古信息园 A6 数据中心</span></td><td><span>雅安大数据产业园</span></td><td><span>广发银行股份有限公司南海生产机房</span></td></tr><tr><td><span>中国电信上海公司漕盈数据中心 1 号楼</span></td><td><span>重庆腾讯云计算数据中心</span></td><td><span>中国人寿保险股份有限公司上海数据中心</span></td></tr><tr><td><span>中国电信云计算重庆基地水土数据中心</span></td><td><span>百旺信云数据中心一期</span></td><td><span>汉口银行光谷数据中心</span></td></tr></tbody></table></figure><p>&nbsp;</p></div>
-								
 									</div>
 									
 								</div>
